@@ -263,36 +263,36 @@ psll_node sll_reverse_use_recursion(psll_node head)
 
     return new_head;
 }
-//单链表测试函数
+
 void sll_test(void)
 {
-    int i = 0;
-    int value = 0;
+	int i = 0;
+	int value = 0;
 
-    psll_node head = sll_init();
+	psll_node head = sll_init();
 
-    for (i = 1; i < 19; i++)
-    {
-        head = sll_append(head, i);
-    }
-    sll_print(head);
+	for (i = 1; i < 19; i++)
+	{
+		head = sll_append(head, i);
+	}
+	sll_print(head);
 
-    sll_delete_by_pos(head, 3);
-    sll_print(head);
+	sll_delete_by_pos(head, 3);
+	sll_print(head);
 
-    sll_insert_by_pos(head, 3, 45);
-    sll_print(head);
+	sll_insert_by_pos(head, 3, 45);
+	sll_print(head);
 
-    sll_insert_by_pos(head, 0, 98);
-    sll_print(head);
+	sll_insert_by_pos(head, 0, 98);
+	sll_print(head);
 
-    head = sll_reverse_use_loop(head);
-    sll_print(head);
+	head = sll_reverse_use_loop(head);
+	sll_print(head);
 
-    head = sll_reverse_use_recursion(head);
-    sll_print(head);
+	head = sll_reverse_use_recursion(head);
+	sll_print(head);
 
-    sll_destory(head);
+	sll_destory(head);
 
-    return;
+	return;
 }
