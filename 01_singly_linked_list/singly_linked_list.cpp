@@ -1,4 +1,5 @@
 
+/*单链表实现代码*/
 #include "stdafx.h"
 
 #include <stdlib.h>
